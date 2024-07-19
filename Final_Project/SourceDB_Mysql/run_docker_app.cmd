@@ -1,0 +1,1 @@
+docker run  -p 8082:8081 SourceDB:1.0

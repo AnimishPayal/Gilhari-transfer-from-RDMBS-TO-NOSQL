@@ -1,0 +1,4 @@
+./src/com/project6/gilhari/Student.java
+./src/com/project6/gilhari/Teacher.java
+./src/com/project6/gilhari/Course.java
+./src/com/project6/gilhari/Allotted.java
