@@ -23,4 +23,15 @@ Due to the database-agnostic nature of GILHARI, switching between the two databa
 - Docker installed on your local machine.
 - MySQL and MongoDB instances running on your local machine or accessible via a network.
 - Java Development Kit (JDK) installed.
-\
+-  MySQL Connector/J JDBC Driver (`mysql-connector-j-9.0.0`)
+## Running this Project
+- Launch an Amazon-Linux EC2 Instance (free tier), conifgure security and vpc as default. Note the public IPv4 address.
+
+- Connect to the instance and install docker. Provide access to ec2-user. It is advised to use PuTTY to SSH into the instance if you are using Windows. Close the connection and reconnect to let the changes to reflect.
+
+-On separate command terminals, ssh into the EC2 instance to run a Gilhari instance each. Pull the docker images using the command docker pull public.ecr.aws/q9i6k2u6/gillib:s3 and docker pull public.ecr.aws/q9i6k2u6/gillib:t3. Then run the docker images using docker run -p 8082:8081 public.ecr.aws/q9i6k2u6/gillib:s3 and docker run -p 8083:8081 public.ecr.aws/q9i6k2u6/gillib:t3 respectively.
+
+-Once the Gilhari instances are up and running successfully, the transfer can be performed. Here, we use a python program to do the same.
+
+
+  
