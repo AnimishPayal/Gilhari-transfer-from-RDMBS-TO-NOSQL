@@ -8,10 +8,10 @@ mongo_uri = "mongodb://localhost:27017"
 client = MongoClient(mongo_uri)  # This uses the native MongoDB API to connect
 
 # Replace 'your_database' with the name of your database
-db = client.your_database  # Access the database
+db = client.db2  # Access the database
 
 # Replace 'your_collection' with the name of your collection
-collection = db.your_collection  # Access the collection
+collection = db.db2  # Access the collection
 
 # Load JSON data from file
 with open('Allotted_LIST.json') as file:
